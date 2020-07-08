@@ -1,0 +1,96 @@
+html { 
+ background-image: url("images.jpeg");
+ background-repeat: no-repeat;
+background-size: 100%;
+ } 
+  
+ body {  
+ width: 100%; 
+ height:100%; 
+ font-family: 'Open Sans', sans-serif; 
+
+ color: #fff; 
+ color: black;
+ font-size: 18px; 
+ text-align:center; 
+ letter-spacing:1.2px; 
+  
+ } 
+ .login {  
+ position: absolute; 
+ top: 40%; 
+ left: 50%; 
+ margin: -150px 0 0 -150px; 
+ width:400px; 
+ height:400px; 
+ } 
+  
+ .login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; } 
+  
+ input {  
+ display: flex;
+ align-self: end;
+ margin-bottom: 30px;  
+ background: rgba(0,0,0,0.3); 
+ border: none; 
+ outline: none; 
+ padding: 10px; 
+ font-size: 13px; 
+ color: #00ff00; 
+ text-color: white;
+ text-shadow: 1px 1px 1px rgba(1,1,1,1); 
+ border: 1px solid rgba(0,0,0,0.3); 
+ border-radius: 4px; 
+ box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2); 
+ -webkit-transition: box-shadow .5s ease; 
+ -moz-transition: box-shadow .5s ease; 
+ -o-transition: box-shadow .5s ease; 
+ -ms-transition: box-shadow .5s ease; 
+ transition: box-shadow .5s ease; 
+ } 
+ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); } 
+
+
+
+Select {  
+ display: flex;
+ align-self: end;
+ margin-bottom: 30px;  
+ background: rgba(0,0,0,0.3); 
+ border: none; 
+ outline: none; 
+ padding: 10px; 
+ font-size: 13px; 
+ color: #fff; 
+ text-shadow: 1px 1px 1px rgba(1,1,1,1); 
+ border: 1px solid rgba(0,0,0,0.3); 
+ border-radius: 4px; 
+ box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2); 
+ -webkit-transition: box-shadow .5s ease; 
+ -moz-transition: box-shadow .5s ease; 
+ -o-transition: box-shadow .5s ease; 
+ -ms-transition: box-shadow .5s ease; 
+ transition: box-shadow .5s ease; 
+ } 
+Select:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); } 
+
+button{ display: flex;
+ align-self: end;
+ margin-bottom: 30px;  
+ background: rgba(0,0,0,0.3); 
+ border: none; 
+ outline: none; 
+ padding: 10px; 
+ font-size: 13px; 
+ color: #fff; 
+ text-shadow: 1px 1px 1px rgba(1,1,1,1); 
+ border: 1px solid rgba(0,0,0,0.3); 
+ border-radius: 4px; 
+ box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2); 
+ -webkit-transition: box-shadow .5s ease; 
+ -moz-transition: box-shadow .5s ease; 
+ -o-transition: box-shadow .5s ease; 
+ -ms-transition: box-shadow .5s ease; 
+ transition: box-shadow .5s ease; 
+}
+button:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); } 

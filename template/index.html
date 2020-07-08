@@ -1,0 +1,41 @@
+<doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Car Price Prediction</title>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <h1><center>Used Car Price Prediction</center></h1>
+        <form action="{{url_for('predict')}}" method="post" align = "left" >
+            How old your car is? <input type="text" name="Year" placeholder="Enter no. of years used" required="required">
+            What is the present price of your car?<input type="text" name="Present_Price" placeholder="(in lakhs)" required="required">
+            How much kms have your car drove?<input type="text" name="Kms_Driven" placeholder="Enter Kms_Driven" required="required">
+            Fuel Type : <Select name="Fuel_Type" id="Fuel_Type">
+                <Option value="1">CNG</Option>
+                <Option value="2">Diesel</Option>
+                <Option value="3">Petrol</Option>
+           </Select>
+           
+           Seller_ Type : <Select name="Seller_Type" id="Seller_Type">
+                <Option value="1">Dealer</Option>
+                <Option value="2">Individual</Option>
+           </Select>
+          
+           Transmission : <Select name="Transmission" id="Transmission">
+                <Option value="1">Automatic</Option>
+                <Option value="2">Manual</Option>
+           </Select>
+           How many owners did your car had?<input type="text" name="Owner" placeholder="Number of owners(including past owners if any)" required="required" />
+           <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+        <br>
+        <br>
+        {{ prediction_text }}
+            
+    </body>
+</html>
